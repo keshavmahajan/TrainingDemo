@@ -14,6 +14,7 @@ using System.Data;
 
 namespace Training.Controllers
 {
+
     public class dataController : ApiController
     {
 
@@ -120,6 +121,7 @@ namespace Training.Controllers
 
 
         [Route("deleteUser/{userId}")]
+        [AllowAnonymous]
         [HttpDelete]
         public HttpResponseMessage deleteUser(int userId)
         {
